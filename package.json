@@ -1,0 +1,35 @@
+{
+  "name": "generator-transform-stream",
+  "version": "0.0.0",
+  "description": "Create a transform stream using an async generator",
+  "main": "src/gts.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint src"
+  },
+  "keywords": [
+    "transform",
+    "stream",
+    "async",
+    "generator",
+    "iterator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bealearts/generator-transform-stream.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "David Beale",
+    "url": "http://bealearts.co.uk/"
+  },
+  "dependencies": {
+    "duplexify": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
