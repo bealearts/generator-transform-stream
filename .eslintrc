@@ -8,6 +8,7 @@
     "no-use-before-define": ["off"],
     "no-unused-vars": ["warn"],
     "no-restricted-syntax": ["off"],
+    "import/extensions": ["off"],
     "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.js", "**/*.spec.js", "**/example/*.js"]}]
   }
 }

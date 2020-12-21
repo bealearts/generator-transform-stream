@@ -9,6 +9,21 @@ npm i -D generator-transform-stream
 
 # Usage
 
+```js
+import fs from 'fs';
+import { pipeline } from 'stream';
+import gts from 'generator-transform-stream';
+
+pipeline(
+  fs.createReadStream('input.txt', 'utf8'),
+  gts(async function* transform(input) {
+    for await (const chunk of input) {
+      yield chunk.toUpperCase();
+    }
+  }),
+  fs.createWriteStream('output.txt')
+);
+```
 
 
 # Development

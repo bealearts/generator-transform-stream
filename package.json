@@ -2,10 +2,10 @@
   "name": "generator-transform-stream",
   "version": "0.0.0",
   "description": "Create a transform stream using an async generator",
-  "main": "src/gts.js",
+  "main": "./src/gts.js",
   "type": "module",
   "scripts": {
-    "test": "npm run lint",
+    "test": "npm run lint && node src/gts.test.js",
     "lint": "eslint src"
   },
   "keywords": [
@@ -30,6 +30,7 @@
   "devDependencies": {
     "eslint": "^7.16.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1"
+    "eslint-plugin-import": "^2.22.1",
+    "streamtest": "^2.0.0"
   }
 }

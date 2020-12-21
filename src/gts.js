@@ -6,9 +6,9 @@ export default function gts(func, options) {
     ...options
   });
 
-  const outputStream = Readable.from(func(inputStream));
+  const outputStream = Readable.from(func(inputStream), { objectMode: false, ...options });
 
-  const transformStream = duplexify(inputStream, outputStream);
+  const transformStream = duplexify(inputStream, outputStream, { ...options });
 
   return transformStream;
 }
